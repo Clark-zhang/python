@@ -17,7 +17,7 @@ class GetBookCrawler:
         self.host = 'http://theurlyouwanttocrawl'
 
     def save(self, html, name):
-        file_name = name + '.html'
+        file_name = name
         f = open('./book/' + file_name, 'ab')
         f.write(html.content)
         f.close()
